@@ -124,7 +124,6 @@ cat sql/populate_mart_customer.sql | docker exec -i autosteward-postgres psql -U
 - **Approval Workflow**: All fixes require manual approval
 - **Rollback Capability**: Instantly revert any applied fix
 - **Audit Trails**: Full history stored in OpenMetadata
-- **Emergency Stop**: Halt all operations instantly
 
 ## 📝 Configuration
 
