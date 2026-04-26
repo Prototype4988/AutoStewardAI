@@ -136,12 +136,6 @@ Edit `config/config.yaml` to customize:
 - Rate limiting rules
 - Notification settings
 
-## 📚 Documentation
-
-- [SETUP.md](docs/SETUP.md) - Detailed setup instructions
-- [PITCH.md](docs/PITCH.md) - Hackathon pitch document
-- [REQUIREMENTS.md](docs/REQUIREMENTS.md) - Requirements specification
-
 ## 🎯 Impact
 
 - **Time Saved**: Reduces fix time from days to minutes
