@@ -2,8 +2,34 @@
 
 **Autonomous Data Steward Powered by OpenMetadata AI SDK**
 
-AutoSteward AI automatically detects, diagnoses, and fixes data quality issues using AI. It integrates with OpenMetadata for lineage tracing and applies fixes directly to your PostgreSQL database, transforming multi-day manual processes into 2-minute autonomous workflows.
+AutoSteward AI transforms data maintenance from a multi-day manual process into a fully autonomous 2-minute workflow.
 
+Traditional data platforms detect issues—but leave engineers to fix them manually.
+
+AutoSteward goes further.
+It detects, diagnoses, generates, and applies fixes automatically using AI—powered by OpenMetadata. It integrates with OpenMetadata for lineage tracing and applies fixes directly to your PostgreSQL database, transforming multi-day manual processes into 2-minute autonomous workflows.
+
+## 💡 Why This Matters
+
+Data teams spend a majority of their time:
+
+- Debugging broken pipelines
+- Tracing data quality issues across lineage
+- Fixing schema and data inconsistencies manually
+
+Existing tools stop at alerting.
+
+👉 AutoSteward turns metadata into action.
+
+## ⚙️ What AutoSteward Does
+
+AutoSteward is an intelligent AI agent that:
+
+- Detects data quality issues using OpenMetadata
+- Diagnoses root causes using lineage
+- Generates context-aware SQL fixes using AI
+- Applies fixes safely with approval
+- Verifies results using real data
 ## 🚀 Key Features
 
 - **Autonomous Issue Detection**: Continuous 30-second polling for data quality issues
@@ -16,10 +42,15 @@ AutoSteward AI automatically detects, diagnoses, and fixes data quality issues u
 
 ## 🏆 Usage of OpenMetadata
 
-- **GET_ENTITY_LINEAGE API**: Visual lineage graph with upstream/downstream relationships
-- **PATCH_ENTITY API**: Stores audit trails in asset descriptions
-- **Column Tagging**: Marks fixed columns for governance and tracking
-- **Data Quality Integration**: Uses OpenMetadata's test framework for issue detection
+AutoSteward AI uses OpenMetadata as its core intelligence layer:
+
+- **Data Quality Signals**: Continuously monitors OpenMetadata tests to detect real-time data issues  
+- **Lineage-Based Root Cause Analysis**: Uses lineage to trace issues upstream and identify their origin  
+- **Metadata Context for AI**: Leverages entity metadata to generate accurate, context-aware SQL fixes  
+- **Column Tagging & Governance**: Tags fixed columns for traceability and audit  
+- **Audit Trail Integration**: Stores fix history and actions within OpenMetadata for full visibility  
+
+OpenMetadata is not just used for visualization—it actively drives autonomous decision-making in AutoSteward.
 
 ## 📋 Project Structure
 
@@ -89,6 +120,11 @@ streamlit run src/dashboard.py
 ```
 
 ## 🎬 Demo Walkthrough
+
+- Detected 127 missing email values  
+- Traced root cause using OpenMetadata lineage  
+- Applied AI-generated fix  
+- **Reduced null values from 127 → 0 in seconds**
 
 1. **Introduce a data quality issue**
 ```bash
