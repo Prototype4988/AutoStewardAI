@@ -1,0 +1,61 @@
+# AutoSteward AI Configuration
+# Copy this file to config.yaml and fill in your credentials
+
+# OpenMetadata Configuration
+openmetadata:
+  host: "http://localhost:8585"
+  api_version: "v1"
+  username: "admin"
+  password: "admin"  # Change this to your OpenMetadata password
+  verify_ssl: false
+
+# Project Configuration
+project:
+  service_name: "Ecommerce_test"
+  database_name: "jaffle_shop"
+
+# PostgreSQL Configuration
+postgres:
+  host: "localhost"
+  port: 5432
+  database: "jaffle_shop"
+  user: "postgres"
+  password: "postgres"  # Change this to your PostgreSQL password
+
+# Severity Scoring Configuration
+severity:
+  base_score: 30
+  max_failing_test_score: 40
+  failing_test_points: 10
+  max_downstream_impact_score: 30
+  downstream_impact_points: 10
+  max_total_score: 100
+  issue_type_scores:
+    null_values: 20
+    duplicates: 15
+    format_mismatch: 10
+
+# Rate Limiting
+rate_limiting:
+  max_fixes_per_hour: 10
+
+# Discord Notifications (Optional)
+discord:
+  webhook_url: ""  # Add your Discord webhook URL if you want notifications
+  fix_applied_team: ""
+  error_team: ""
+  notify_on:
+    issue_detected: true
+    fix_applied: true
+    fix_failed: true
+    error: true
+
+# AI Configuration
+ai:
+  provider: "ollama"  # Options: openai, ollama, groq
+  model: "llama3"  # For ollama: llama3, mistral, qwen. For openai: gpt-4o, gpt-4, gpt-3.5-turbo
+  temperature: 0.0
+  max_tokens: 500
+  openai_api_key: ""  # Only needed if provider is "openai"
+  ollama_base_url: "http://localhost:11434"
+  groq_api_key: ""  # Only needed if provider is "groq"

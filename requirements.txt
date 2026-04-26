@@ -1,0 +1,10 @@
+data-ai-sdk
+pyyaml
+langchain
+langchain-openai
+langchain-ollama
+langchain-groq
+fastapi
+uvicorn
+streamlit
+psycopg2-binary
